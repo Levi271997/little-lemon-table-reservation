@@ -21,13 +21,15 @@ p{
   margin: 0;
 }
 
+header{
+  border-bottom: 1px  solid $cc-495E57;
 
+}
 .wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px  solid $cc-495E57;
-
+  
   .logo{
     font-size: $ff-md;
     font-weight: 700;
@@ -206,7 +208,4 @@ footer{
   background-color: $cc-080909;
   color: #fff;
 
-  .wrapper{
-    border:none;
-  }
 }

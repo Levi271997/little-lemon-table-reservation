@@ -1,3 +1,5 @@
+
+
 const HomeBanner = ()=>{
     return(
         <section className="homebanner">
