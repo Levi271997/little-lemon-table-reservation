@@ -1,0 +1,47 @@
+$cc-495E57 :  #495E57;
+$cc-F4CE14:#F4CE14;
+$cc-EDEFEE: #EDEFEE;
+$cc-080909:#080909; 
+
+$trans-fast: 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+$trans-medium: 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+$trans-slow: 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+
+button{
+    all: unset;
+}
+
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('./assets/font/Rubik-Regular.ttf') format('truetype');
+    font-weight:400; /* Medium weight */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Rubik';
+    src: url('./assets/font/Rubik-Medium.ttf') format('truetype');
+    font-weight: 500; /* Bold weight */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Rubik';
+    src: url('./assets/font/Rubik-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+
+
+
+  $ff-base:16;
+  $ff-xxs:calc(14 / $ff-base) + rem;
+  $ff-sm: calc(16 / $ff-base) + rem;
+  $ff-md:calc(20 / $ff-base) + rem;
+  $ff-lg:calc(30 / $ff-base) + rem;
+  $ff-xl:calc(32 / $ff-base) + rem;
+  $ff-xxl:calc(36 / $ff-base) + rem;
+
+
+  

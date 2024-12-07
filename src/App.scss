@@ -1,0 +1,212 @@
+@import './globals.scss';
+
+.container{
+  max-width:1024px;
+  margin: auto;
+}
+section,header, footer{
+  padding-inline: 20px;
+}
+
+html{
+  font-size: 16px;
+  
+}
+
+body{
+  font-family: 'Rubik',sans-serif;
+}
+
+p{
+  margin: 0;
+}
+
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px  solid $cc-495E57;
+
+  .logo{
+    font-size: $ff-md;
+    font-weight: 700;
+  }
+  ul{
+    list-style: none;
+    padding:0;
+    display:flex;
+    gap:20px;
+
+    li{
+      font-weight: 500;
+    }
+  }
+
+  @media(max-width:480px){
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+}
+
+.homebanner{
+  background-image: url(./assets/images/restaurant.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 150px 100px;
+
+
+  .hero{
+
+    &_title{
+      font-size: $ff-xxl;
+      color:$cc-495E57;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    &_tagline{
+      font-size: $ff-xl;
+
+      @media(max-width:500px){
+        font-size: $ff-lg;
+      }
+      @media(max-width:480px){
+        font-size: $ff-md;
+      }
+    }
+    &_button{
+      background-color: $cc-F4CE14;
+      font-size: $ff-md;
+      padding: 20px 30px;
+      display: inline-block;
+      margin-top: 3rem;
+      font-weight: 500;
+      border: 1px solid transparent;
+      transition: $trans-fast;
+
+      &:hover{
+        background-color: #fff;
+        border: 1px solid $cc-495E57;
+        cursor: pointer;
+      }
+
+      @media(max-width:480px){
+        padding: 10px 20px;
+        font-size:$ff-sm;
+      }
+    }
+  }
+
+  @media(max-width:500px){
+    padding-block: 80px;
+  }
+}
+
+
+.our-dishes{
+
+  padding-block: 50px;
+
+}
+.section-title{
+  font-size: $ff-xxl;
+
+
+  @media(max-width:500px){
+    font-size: $ff-lg;
+  }
+}
+
+.menu-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
+
+  &_item{
+
+    img.delicay_image{
+      max-width: 100%;
+      width:100%;
+      height: 315px;
+      object-fit: cover;
+
+      @media(max-width:500px){
+        height: 150px;
+      }
+    }
+
+    .delicacy_name{
+      font-size: $ff-md;
+      font-weight: 500;
+      margin-top: 10px;
+      margin-bottom: 20px;
+
+      @media(max-width:500px){
+       font-size: $ff-sm;
+       margin-bottom: 10px;
+      }
+    }
+  }
+
+  @media(max-width:767px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+.testimonials{
+  background-color: $cc-495E57;
+  padding-block: 50px;
+
+  .section-title{
+    color: #fff;
+  }
+}
+.testimonial-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
+
+  @media(max-width:767px){
+    grid-template-columns: repeat(2,1fr);
+  }
+  @media(max-width:480px){
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+.testimonial-item{
+  background-color: #fff;
+  padding: 20px;
+}
+.author-profile{
+  width: 50px;
+  border-radius: 999px;
+}
+.author-name{
+  font-size: $ff-md;
+  margin-block:5px;
+}
+.star-rating{
+  display: flex;
+  flex-wrap: nowrap;
+  gap:5px;
+  margin-bottom: 20px;
+
+  .star{
+    width:15px;
+  }
+}
+
+footer{
+  background-color: $cc-080909;
+  color: #fff;
+
+  .wrapper{
+    border:none;
+  }
+}
