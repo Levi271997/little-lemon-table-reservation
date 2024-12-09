@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 const HomeBanner = ()=>{
     return(
@@ -7,7 +7,7 @@ const HomeBanner = ()=>{
                <div className="hero">
                     <h1 className="hero_title">Little Lemon Restaurant</h1>
                     <p className="hero_tagline">Welcome to the taste of Little Lemon</p>
-                    <a className="hero_button">Reserve a table</a>
+                    <Link to="/reserve" className="hero_button">Reserve a table</Link>
                </div>
             </div>
         </section>
